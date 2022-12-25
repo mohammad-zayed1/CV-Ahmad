@@ -176,6 +176,9 @@ ul {
 
 .page h1 {
     margin: 20px 20px 40px;
+    text-shadow: -1px -1px 0px #aaa,
+            3px 3px 0px #bbb,
+            6px 6px 0px #ccc;
 }
 
 .page h1::before,
@@ -448,7 +451,12 @@ font-size:16px;
  width: 120px;
  right: 40px;
  bottom: 20px;
- opacity: 0.1;
+ opacity: 0.9;
+ padding: 10px;
+ border-radius: 6px;
+}
+.radial{
+    background-image: radial-gradient(circle, red, #333, #aaa);
 }
 /* reminders widget */
 .reminders ul li .key{
@@ -525,6 +533,67 @@ position: relative;
 .social-media .linkedin a {
     background-color: #0077b5;
 }
+
+/* nested list*/
+.nested-list > ul  {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.nested-list ul li h3{
+    position: relative;
+}
+.nested-list ul li h3::before{
+        content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #aaa;
+            border: 1px solid #eee;
+            position: absolute;
+            left: -27px;
+            top: 3px;
+
+}
+.nested-list ul li .inside{
+    position: relative;
+    
+}
+.nested-list ul li .inside::before {
+        content: " ";
+            position: absolute;
+            height: 150px;
+            width: 2px;
+            background-color: #ccc;
+            top: -22px;
+            left: -19px;
+}
+.nested-list ul li .inside li{
+    padding:10px 20px;
+    position: relative;
+}
+.nested-list ul li .inside li::before{
+    content: " ";
+        height: 2px;
+        width: 35px;
+        background-color: #ccc;
+        position: absolute;
+        top: 18px;
+        left: -17px;
+}
+
+.nested-list .back{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(211, 208, 208);
+    border:2px solid black;
+    border-radius: 6px;;
+    background-image: url(../img/got.jpg) , url(../img/pk.jpg) , url(../img/witcher.jpg);
+    background-repeat: no-repeat , no-repeat , no-repeat;
+    background-position: left , center , right;
+    background-size: 150px ,150px  , 150px;
+}
+
+/* nested list*/
 /* project table */
 .projects .responsev-table{
     overflow-x: auto;

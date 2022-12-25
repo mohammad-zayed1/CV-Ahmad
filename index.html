@@ -34,7 +34,7 @@
               <span class="hide-mobile">Dashboard</span>
             </a>
           </li>
-          
+
           <li>
             <a
               class="d-flex align-center fs-14 c-black p-10 rad-6"
@@ -43,7 +43,7 @@
               ><span class="hide-mobile">Profile</span></a
             >
           </li>
-         
+
           <li>
             <a
               class="d-flex align-center fs-14 c-black p-10 rad-6"
@@ -85,7 +85,7 @@
           </div>
         </div>
         <!-- end head -->
-        <h1 class="p-relative">Dashboard</h1>
+        <h1 class="p-relative shadow">Dashboard</h1>
         <div class="wrapper d-grid gap-20">
           <!-- start welcome -->
           <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
@@ -100,7 +100,9 @@
                 alt=""
               />
             </div>
-            <img src="img/ahmad.jpg" alt="#" class="avatar" />
+            <a href="./profile.html">
+              <img src="img/ahmad.jpg" alt="#" class="avatar" />
+            </a>
             <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
               <div>
                 Ahmad Zayed
@@ -433,7 +435,11 @@
                 Finish The Project & Get Money
               </li>
             </ul>
-            <img class="launch-icon hide-mobile" src="img/rocket.svg" alt="" />
+            <img
+              class="launch-icon hide-mobile radial"
+              src="img/rocket.svg"
+              alt=""
+            />
           </div>
           <!-- end last project progress -->
           <!-- start reminders -->
@@ -477,11 +483,7 @@
           <div class="latest-post p-20 bg-white rad-10">
             <h2 class="mt-0 mb-25">Latest Post</h2>
             <div class="top d-flex align-center">
-              <img
-                class="avatar mr-15 rad-half"
-                src="img/ahmad.jpg"
-                alt="#"
-              />
+              <img class="avatar mr-15 rad-half" src="img/ahmad.jpg" alt="#" />
               <div class="info">
                 <span class="d-block mb-5 fw-bold">Ahmad Zayed</span>
                 <span class="d-block c-grey">About 3 Hours Ago</span>
@@ -502,7 +504,9 @@
           <div class="social-media p-20 bg-white rad-10 p-relative">
             <h2 class="mt-0 mb-25">Social Media Stats</h2>
             <div class="box twitter p-15 mb-10 between-flex">
-              <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
+              <i
+                class="fa-brands fa-twitter fa-2x c-white h-full center-flex"
+              ></i>
               <span> 90K Followers</span>
               <a class="fs-13 c-white btn-shape" href="#">Follow</a>
             </div>
@@ -529,8 +533,169 @@
             </div>
           </div>
           <!-- end social media -->
+          <!-- nested list -->
+          <div class="nested-list p-20 bg-white rad-10 p-relative">
+            <h2 class="mt-0 mb-25">My Hobbies</h2>
+            <ul>
+              <li class="p-10 title">
+                <h3>Sports Like :</h3>
+                <ul class="mt-10 inside">
+                  <li>Football</li>
+                  <li>Basketball</li>
+                  <li>Table Tennis</li>
+                </ul>
+              </li>
+              <li class="p-10">
+                <h3>Movies Like :</h3>
+                <ul class="mt-10 inside">
+                  <li>Game Of Thrones</li>
+                  <li>Peaky Blinders</li>
+                  <li>The Witcher</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="back"></div>
+          </div>
+          <!-- end list -->
+          <!-- start project table -->
+          <div class="projects p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-20">Projects</h2>
+            <div class="responsev-table">
+              <table class="fs-15 w-full">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ministry wikipedia</td>
+                    <td>10 may 2022</td>
+                    <td>ministry</td>
+                    <td>$5300</td>
+                    <td>
+                      <img
+                        class="one"
+                        src="img/IMG_20220602_160945_858.jpg"
+                        alt="#"
+                      />
+                      <img class="two" src="img/hamza.jpg" alt="#" />
+                      <img class="three" src="img/ahmad.jpg" alt="#" />
+                      <img class="foure" src="img/ammar.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-orange c-white btn-shape"
+                        >pending</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>elzero shop</td>
+                    <td>12 oct 2021</td>
+                    <td>elzero company</td>
+                    <td>$1500</td>
+                    <td>
+                      <img
+                        class="one"
+                        src="img/IMG_20220602_160945_858.jpg"
+                        alt="#"
+                      />
+                      <img class="two" src="img/ahmad.jpg" alt="#" />
+                      <img class="three" src="img/hamza.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-blue c-white btn-shape"
+                        >In progress</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>bouba app</td>
+                    <td>05 sp 2021</td>
+                    <td>bouba</td>
+                    <td>$800</td>
+                    <td>
+                      <img class="one" src="img/ahmad.jpg" alt="#" />
+                      <img class="two" src="img/hamza.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-green c-white btn-shape"
+                        >completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mahmoud website</td>
+                    <td>22 may 2021</td>
+                    <td>mahmoud</td>
+                    <td>$600</td>
+                    <td>
+                      <img
+                        class="one"
+                        src="img/IMG_20220602_160945_858.jpg"
+                        alt="#"
+                        width="20px"
+                        height="20px"
+                      />
+                      <img class="two" src="img/ammar.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-green c-white btn-shape"
+                        >completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>sayed website</td>
+                    <td>24 may 2021</td>
+                    <td>sayed</td>
+                    <td>$300</td>
+                    <td>
+                      <img
+                        class="one"
+                        src="img/IMG_20220602_160945_858.jpg"
+                        alt="#"
+                      />
+                      <img class="two" src="img/ahmad.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-red c-white btn-shape"
+                        >rejected</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>arena application</td>
+                    <td>01 mar 2021</td>
+                    <td>arena company</td>
+                    <td>$2600</td>
+                    <td>
+                      <img
+                        class="one"
+                        src="img/IMG_20220602_160945_858.jpg"
+                        alt="#"
+                      />
+                      <img class="two" src="img/ahmad.jpg" alt="#" />
+                      <img class="three" src="img/hamza.jpg" alt="#" />
+                      <img class="three" src="img/ammar.jpg" alt="#" />
+                    </td>
+                    <td>
+                      <span class="label bg-green c-white btn-shape"
+                        >completed</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- end project table -->
         </div>
-       
       </div>
     </div>
     <script
