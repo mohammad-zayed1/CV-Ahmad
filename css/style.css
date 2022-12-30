@@ -204,7 +204,7 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 @media (max-width:767px) {
@@ -359,34 +359,7 @@ border-top-color: var(--green-color);
         width: 100%;
     }
 }
-/* latest news widget */
-.latest-news .news-row:not(:last-of-type){
-    margin-bottom:20px;
-    padding-bottom:20px;
-    border-bottom:1px solid #eee;
-}
-.latest-news .news-row img {
-    width: 100px;
-    height: 60px;
-    border-radius:6px;
-    margin-right: 15px;
-}
-.latest-news .info{
-    flex-grow: 1;
-}
-.latest-news .info h3{
-margin: 0 0 6px;
-font-size:16px;
-}
-@media (max-width:767px){
-    .latest-news .news-row{
-        display: block;
-    }
-    .label{
-        margin: 10px auto;
-        width: fit-content;
-    }
-}
+
 /* task widget*/
 .tasks .task-row:not(:last-of-type){
     margin-bottom:15px;
@@ -458,33 +431,8 @@ font-size:16px;
 .radial{
     background-image: radial-gradient(circle, red, #333, #aaa);
 }
-/* reminders widget */
-.reminders ul li .key{
-    width: 15px;
-    height: 15px;
-}
-.reminders ul li > .blue{
-    border-left: 2px solid var(--blue-color);
-}
-.reminders ul li > .green{
-    border-left: 2px solid var(--green-color);
-}
-.reminders ul li > .orange{
-    border-left: 2px solid var(--orange-color);
-}
-.reminders ul li > .red{
-    border-left: 2px solid var(--red-color);
-}
-/* latst post widget */
-.latest-post .avatar{
-    width: 48px;
-    height: 48px;  
-}
-.latest-post .post-content {
-    line-height:1.8;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
+
+
 /* social widget */
 .social-media .box{
 padding-left: 70px;
@@ -635,6 +583,49 @@ position: relative;
 .projects .label{
     font-size: 13px;
 }
+.dropbtn {
+    background-color: #eee;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 493px;
+border: 2px solid #ccc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin:20px auto; 
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 493px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-top: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* animation */
 @keyframes change-color {
     from{
